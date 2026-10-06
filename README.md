@@ -24,7 +24,7 @@ The solution uses a decoupled architecture to separate the user interface from t
 
 This solution requires no local backend setup, as the n8n orchestration layer is hosted live. 
 
-1. Open `challenge-generator.html` in any modern browser.
+1. Open `challenge-generator.html` (or `index.html`) in any modern browser.
 2. Locate the floating **Proposal Agent** panel in the bottom right corner.
 3. **Run a text test:** Paste the contents of `sample-inputs/01-notes-retiree-income.txt` into the text box and click **Generate Proposal**.
 4. **Run an audio test:** Click the paperclip/attachment icon, upload a sample audio file (to simulate `04-voice-note-transcript.txt`), and click **Generate Proposal**. 
@@ -36,6 +36,7 @@ With an additional 12–24 hours, I would focus on extending the agent's robust 
 | Feature | Implementation Plan |
 | :--- | :--- |
 | **WhatsApp Integration** | Connect the Meta WhatsApp Business API to the existing n8n audio branch. PMs could forward voice notes while driving and instantly receive the finalized PDF in their chat. |
+| **Handwritten Notes (Vision OCR)** | PMs often scribble notes on physical paper during meetings. I would integrate a multimodal vision model (e.g., GPT-4o Vision) into the n8n webhook, allowing PMs to simply snap a photo of their notepad to generate a proposal just as easily as text or audio. |
 | **Strict JSON Validation** | Add a JSON Validator node directly inside the n8n workflow. If the LLM hallucinates a key, it would catch the error and trigger an automatic retry loop rather than breaking the frontend. |
 | **Interactive Ambiguity** | Instead of simply flagging missing data on the final PDF, the agent would pause the workflow and prompt the PM via the UI to clarify missing constraints (like horizon or amount) before generating. |
 | **API Security** | Move the exposed n8n webhook URL behind a secure API gateway to authenticate requests and manage rate limiting for production. |
