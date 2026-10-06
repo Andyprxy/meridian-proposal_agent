@@ -31,7 +31,7 @@ This solution requires no local backend setup, as the n8n orchestration layer is
 
 ## What I'd do next
 
-With an additional 4–8 hours, I would focus on extending the agent's robust omnichannel capabilities and error handling:
+With an additional 12–24 hours, I would focus on extending the agent's robust omnichannel capabilities and error handling:
 
 | Feature | Implementation Plan |
 | :--- | :--- |
