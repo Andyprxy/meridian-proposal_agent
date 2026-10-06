@@ -27,7 +27,7 @@ This solution requires no local backend setup, as the n8n orchestration layer is
 1. Open `challenge-generator.html` (or `index.html`) in any modern browser.
 2. Locate the floating **Proposal Agent** panel in the bottom right corner.
 3. **Run a text test:** Paste the contents of `sample-inputs/01-notes-retiree-income.txt` into the text box and click **Generate Proposal**.
-4. **Run an audio test:** Click the paperclip/attachment icon, upload a sample audio file (to simulate `04-voice-note-transcript.txt`), and click **Generate Proposal**. 
+4. **Run an audio test:** Click the paperclip/attachment icon, upload a sample audio file (to simulate `Mrs Smith Update - Audio file.mp3`), and click **Generate Proposal**. 
 
 ## What I'd do next
 
